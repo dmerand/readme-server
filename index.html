@@ -143,6 +143,10 @@ Error message and password prompt
 
 <li>$:/config/DownloadSaver/AutoSave</li>
 
+<li>$:/config/Manager/System</li>
+
+<li>$:/config/Manager/Tag</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/close-all</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/fold-all</li>
@@ -158,6 +162,8 @@ Error message and password prompt
 <li>$:/config/RelinkOnRename</li>
 
 <li>$:/core</li>
+
+<li>$:/core/templates/plain-text-tiddler-with-title</li>
 
 <li>$:/DefaultTiddlers</li>
 
@@ -178,6 +184,8 @@ Error message and password prompt
 <li>$:/state/folded/TiddlyWiki Debian System Service</li>
 
 <li>$:/state/sidebar</li>
+
+<li>$:/state/tab--1498284803</li>
 
 <li>$:/state/tab--1963855381</li>
 
@@ -201,6 +209,8 @@ Error message and password prompt
 
 <li>$:/StoryList</li>
 
+<li>$:/temp/advancedsearch</li>
+
 <li>$:/temp/info-plugin</li>
 
 <li>$:/temp/search</li>
@@ -215,7 +225,11 @@ Error message and password prompt
 
 <li>$:/view</li>
 
-<li>Index</li>
+<li>About this Project</li>
+
+<li>INDEX</li>
+
+<li>TXT Exporter</li>
 
 </ul>
 </p>
@@ -229,6 +243,12 @@ Error message and password prompt
 <div id="storeArea" style="display:none;">
 <div created="20200215013407103" creator="Donald" modified="20200215013407103" modifier="Donald" title="$:/config/DownloadSaver/AutoSave">
 <pre>yes</pre>
+</div>
+<div created="20200216140519613" modified="20200216140520230" title="$:/config/Manager/System">
+<pre>system</pre>
+</div>
+<div created="20200216140516445" modified="20200216140516445" title="$:/config/Manager/Tag">
+<pre>INDEX</pre>
 </div>
 <div created="20200215022548236" creator="Donald" modified="20200216020903294" modifier="Donald" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/close-all">
 <pre>hide</pre>
@@ -9444,8 +9464,16 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20200215015100775" creator="Donald" modified="20200216020703851" modifier="Donald" title="$:/DefaultTiddlers">
-<pre>Index</pre>
+<div created="20200216142333084" modified="20200216144553868" tags="" title="$:/core/templates/plain-text-tiddler-with-title">
+<pre># &lt;$view field=&quot;title&quot; format=&quot;text&quot; /&gt;
+
+&lt;$view field=&quot;text&quot; format=&quot;text&quot; /&gt;
+
+
+</pre>
+</div>
+<div created="20200215015100775" creator="Donald" modified="20200216151054326" modifier="Donald" title="$:/DefaultTiddlers">
+<pre>INDEX [[About this Project]]</pre>
 </div>
 <div plugin-type="import" status="pending" title="$:/Import" type="application/json">
 <pre>{
@@ -9467,7 +9495,7 @@ Error message and password prompt
 <div created="20200215013054902" creator="Donald" modified="20200216020503554" modifier="Donald" title="$:/SiteSubtitle">
 <pre>Project Documentation</pre>
 </div>
-<div created="20200215013050415" creator="Donald" modified="20200216020509284" modifier="Donald" title="$:/SiteTitle">
+<div created="20200215013050415" creator="Donald" modified="20200216145122459" modifier="Donald" title="$:/SiteTitle">
 <pre>Your Project Name Here</pre>
 </div>
 <div created="20200215023323690" creator="Donald" modified="20200215023326489" modifier="Donald" title="$:/state/folded/HackDebian">
@@ -9479,8 +9507,11 @@ Error message and password prompt
 <div created="20200215023323690" creator="Donald" modified="20200215023326489" modifier="Donald" title="$:/state/folded/TiddlyWiki Debian System Service">
 <pre>show</pre>
 </div>
-<div created="20200215022700961" creator="Donald" modified="20200215022918565" modifier="Donald" title="$:/state/sidebar">
+<div created="20200215022700961" creator="Donald" modified="20200216140457598" modifier="Donald" title="$:/state/sidebar">
 <pre>yes</pre>
+</div>
+<div created="20200216140538472" modified="20200216145131829" title="$:/state/tab--1498284803">
+<pre>$:/core/ui/AdvancedSearch/Filter</pre>
 </div>
 <div created="20200215013242256" creator="Donald" modified="20200215013316456" modifier="Donald" title="$:/state/tab--1963855381">
 <pre>$:/themes/tiddlywiki/vanilla/themetweaks</pre>
@@ -9500,20 +9531,23 @@ Error message and password prompt
 <div created="20200215013353022" creator="Donald" modified="20200215013409710" modifier="Donald" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
-<div created="20200215013126926" modified="20200215013132420" title="$:/state/tab/moresidebar-1850697562">
-<pre>$:/core/ui/MoreSideBar/All</pre>
+<div created="20200215013126926" modified="20200216144453499" title="$:/state/tab/moresidebar-1850697562">
+<pre>$:/core/ui/MoreSideBar/System</pre>
 </div>
-<div created="20200215013125417" creator="Donald" modified="20200216020937229" modifier="Donald" title="$:/state/tab/sidebar--595412856">
+<div created="20200215013125417" creator="Donald" modified="20200216145303374" modifier="Donald" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Open</pre>
 </div>
 <div created="20200215013249904" creator="Donald" modified="20200215013315336" modifier="Donald" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
 </div>
-<div created="20200215013149328" creator="D" modified="20200216020420079" modifier="Donald" title="$:/status/UserName">
+<div created="20200215013149328" creator="D" modified="20200216021140139" modifier="Donald" title="$:/status/UserName">
 <pre></pre>
 </div>
-<div created="20200216020850882" list="$:/ControlPanel Index" modified="20200216020850882" title="$:/StoryList">
+<div created="20200216151040363" list="INDEX [[About this Project]]" modified="20200216151044065" title="$:/StoryList">
 <pre></pre>
+</div>
+<div created="20200216140544537" modified="20200216145131829" title="$:/temp/advancedsearch">
+<pre>[is[tiddler]is[shadow]sort[title]]</pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
 <pre>{
@@ -9528,15 +9562,15 @@ Error message and password prompt
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;http://100.64.2.3:8001/&quot;
+            &quot;text&quot;: &quot;http://localhost:8000/&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
-            &quot;text&quot;: &quot;100.64.2.3:8001&quot;
+            &quot;text&quot;: &quot;localhost:8000&quot;
         },
         &quot;$:/info/url/hostname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/hostname&quot;,
-            &quot;text&quot;: &quot;100.64.2.3&quot;
+            &quot;text&quot;: &quot;localhost&quot;
         },
         &quot;$:/info/url/protocol&quot;: {
             &quot;title&quot;: &quot;$:/info/url/protocol&quot;,
@@ -9544,7 +9578,7 @@ Error message and password prompt
         },
         &quot;$:/info/url/port&quot;: {
             &quot;title&quot;: &quot;$:/info/url/port&quot;,
-            &quot;text&quot;: &quot;8001&quot;
+            &quot;text&quot;: &quot;8000&quot;
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
@@ -9556,15 +9590,15 @@ Error message and password prompt
         },
         &quot;$:/info/url/origin&quot;: {
             &quot;title&quot;: &quot;$:/info/url/origin&quot;,
-            &quot;text&quot;: &quot;http://100.64.2.3:8001&quot;
+            &quot;text&quot;: &quot;http://localhost:8000&quot;
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
-            &quot;text&quot;: &quot;1366&quot;
+            &quot;text&quot;: &quot;1350&quot;
         },
         &quot;$:/info/browser/screen/height&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/height&quot;,
-            &quot;text&quot;: &quot;768&quot;
+            &quot;text&quot;: &quot;900&quot;
         },
         &quot;$:/info/browser/language&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/language&quot;,
@@ -9573,7 +9607,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20200215023339218" creator="Donald" modified="20200216015645961" modifier="Donald" title="$:/temp/search">
+<div created="20200215023339218" creator="Donald" modified="20200216145029031" modifier="Donald" title="$:/temp/search">
 <pre></pre>
 </div>
 <div created="20200215013237944" creator="Donald" modified="20200215022609712" modifier="Donald" title="$:/theme">
@@ -9694,8 +9728,19 @@ Error message and password prompt
 <div created="20200215022634289" creator="Donald" modified="20200215022653161" modifier="Donald" title="$:/view">
 <pre>classic</pre>
 </div>
-<div created="20200216020529436" modified="20200216020548820" title="Index">
-<pre></pre>
+<div created="20200216145314710" modified="20200216145416134" tags="INDEX" title="About this Project">
+<pre>Created by [[EXPLO|https://www.explo.org]]</pre>
+</div>
+<div created="20200216020529436" modified="20200216145229935" title="INDEX">
+<pre>Any items tagged with &quot;INDEX&quot; will appear here.
+
+&lt;&lt;list-links &quot;[tag[INDEX]]&quot;&gt;&gt;</pre>
+</div>
+<div created="20200216141450940" description="TXT File" extension=".txt" modified="20200216144446118" tags="$:/tags/Exporter" title="TXT Exporter">
+<pre>\define renderContent()
+{{{ $(exportFilter)$ ||$:/core/templates/plain-text-tiddler-with-title}}}
+\end
+&lt;&lt;renderContent&gt;&gt;</pre>
 </div>
 
 </div>

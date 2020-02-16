@@ -143,6 +143,10 @@ Error message and password prompt
 
 <li>$:/config/DownloadSaver/AutoSave</li>
 
+<li>$:/config/Manager/System</li>
+
+<li>$:/config/Manager/Tag</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/close-all</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/fold-all</li>
@@ -153,11 +157,15 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler</li>
 
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/print</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/unfold-all</li>
 
 <li>$:/config/RelinkOnRename</li>
 
 <li>$:/core</li>
+
+<li>$:/core/templates/plain-text-tiddler-with-title</li>
 
 <li>$:/DefaultTiddlers</li>
 
@@ -171,13 +179,27 @@ Error message and password prompt
 
 <li>$:/SiteTitle</li>
 
+<li>$:/state/folded/About this Project</li>
+
+<li>$:/state/folded/File Structure</li>
+
 <li>$:/state/folded/HackDebian</li>
 
 <li>$:/state/folded/Home</li>
 
+<li>$:/state/folded/How to Export as TXT</li>
+
+<li>$:/state/folded/INDEX</li>
+
+<li>$:/state/folded/readme-server.rb</li>
+
 <li>$:/state/folded/TiddlyWiki Debian System Service</li>
 
+<li>$:/state/folded/Usage</li>
+
 <li>$:/state/sidebar</li>
+
+<li>$:/state/tab--1498284803</li>
 
 <li>$:/state/tab--1963855381</li>
 
@@ -201,6 +223,8 @@ Error message and password prompt
 
 <li>$:/StoryList</li>
 
+<li>$:/temp/advancedsearch</li>
+
 <li>$:/temp/info-plugin</li>
 
 <li>$:/temp/search</li>
@@ -219,9 +243,13 @@ Error message and password prompt
 
 <li>File Structure</li>
 
+<li>How to Export as TXT</li>
+
 <li>INDEX</li>
 
 <li>readme-server.rb</li>
+
+<li>TXT Exporter</li>
 
 <li>Usage</li>
 
@@ -238,6 +266,12 @@ Error message and password prompt
 <div created="20200215013407103" creator="Donald" modified="20200215013407103" modifier="Donald" title="$:/config/DownloadSaver/AutoSave">
 <pre>yes</pre>
 </div>
+<div created="20200216140519613" modified="20200216140520230" title="$:/config/Manager/System">
+<pre>system</pre>
+</div>
+<div created="20200216140516445" modified="20200216140516445" title="$:/config/Manager/Tag">
+<pre>INDEX</pre>
+</div>
 <div created="20200215022548236" creator="Donald" modified="20200216020903294" modifier="Donald" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/close-all">
 <pre>hide</pre>
 </div>
@@ -252,6 +286,9 @@ Error message and password prompt
 </div>
 <div created="20200216020927624" modified="20200216020928621" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler">
 <pre>show</pre>
+</div>
+<div created="20200216150513798" modified="20200216150546687" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/print">
+<pre>hide</pre>
 </div>
 <div created="20200215022558257" creator="Donald" modified="20200216020932937" modifier="Donald" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/unfold-all">
 <pre>show</pre>
@@ -9452,6 +9489,14 @@ Error message and password prompt
     }
 }</pre>
 </div>
+<div created="20200216142333084" modified="20200216144553868" tags="" title="$:/core/templates/plain-text-tiddler-with-title">
+<pre># &lt;$view field=&quot;title&quot; format=&quot;text&quot; /&gt;
+
+&lt;$view field=&quot;text&quot; format=&quot;text&quot; /&gt;
+
+
+</pre>
+</div>
 <div created="20200215015100775" creator="Donald" modified="20200216025024533" modifier="Donald" title="$:/DefaultTiddlers">
 <pre>[list[$:/StoryList]]</pre>
 </div>
@@ -9478,17 +9523,38 @@ Error message and password prompt
 <div created="20200215013050415" creator="Donald" modified="20200216021130065" modifier="Donald" title="$:/SiteTitle">
 <pre>README Server</pre>
 </div>
+<div created="20200216151001586" modified="20200216151005444" title="$:/state/folded/About this Project">
+<pre>show</pre>
+</div>
+<div created="20200216151001588" modified="20200216151005444" title="$:/state/folded/File Structure">
+<pre>show</pre>
+</div>
 <div created="20200215023323690" creator="Donald" modified="20200215023326489" modifier="Donald" title="$:/state/folded/HackDebian">
 <pre>show</pre>
 </div>
 <div created="20200215023323689" creator="Donald" modified="20200215023326489" modifier="Donald" title="$:/state/folded/Home">
 <pre>show</pre>
 </div>
+<div created="20200216151001588" modified="20200216151005445" title="$:/state/folded/How to Export as TXT">
+<pre>show</pre>
+</div>
+<div created="20200216151001585" modified="20200216151005443" title="$:/state/folded/INDEX">
+<pre>show</pre>
+</div>
+<div created="20200216151001588" modified="20200216151005445" title="$:/state/folded/readme-server.rb">
+<pre>show</pre>
+</div>
 <div created="20200215023323690" creator="Donald" modified="20200215023326489" modifier="Donald" title="$:/state/folded/TiddlyWiki Debian System Service">
 <pre>show</pre>
 </div>
-<div created="20200215022700961" creator="Donald" modified="20200215022918565" modifier="Donald" title="$:/state/sidebar">
+<div created="20200216151001587" modified="20200216151005444" title="$:/state/folded/Usage">
+<pre>show</pre>
+</div>
+<div created="20200215022700961" creator="Donald" modified="20200216140457598" modifier="Donald" title="$:/state/sidebar">
 <pre>yes</pre>
+</div>
+<div created="20200216140538472" modified="20200216142746312" title="$:/state/tab--1498284803">
+<pre>$:/core/ui/AdvancedSearch/Filter</pre>
 </div>
 <div created="20200215013242256" creator="Donald" modified="20200215013316456" modifier="Donald" title="$:/state/tab--1963855381">
 <pre>$:/themes/tiddlywiki/vanilla/themetweaks</pre>
@@ -9508,11 +9574,11 @@ Error message and password prompt
 <div created="20200215013353022" creator="Donald" modified="20200215013409710" modifier="Donald" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
-<div created="20200215013126926" modified="20200216023702742" title="$:/state/tab/moresidebar-1850697562">
-<pre>$:/core/ui/MoreSideBar/All</pre>
+<div created="20200215013126926" modified="20200216144453499" title="$:/state/tab/moresidebar-1850697562">
+<pre>$:/core/ui/MoreSideBar/System</pre>
 </div>
-<div created="20200215013125417" creator="Donald" modified="20200216025104636" modifier="Donald" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Recent</pre>
+<div created="20200215013125417" creator="Donald" modified="20200216150823129" modifier="Donald" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Open</pre>
 </div>
 <div created="20200215013249904" creator="Donald" modified="20200215013315336" modifier="Donald" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
@@ -9520,8 +9586,11 @@ Error message and password prompt
 <div created="20200215013149328" creator="D" modified="20200216021140139" modifier="Donald" title="$:/status/UserName">
 <pre></pre>
 </div>
-<div created="20200216025105948" list="INDEX [[About this Project]] Usage [[File Structure]] readme-server.rb" modified="20200216025105948" title="$:/StoryList">
+<div created="20200216150814258" list="INDEX [[About this Project]] Usage [[File Structure]] [[How to Export as TXT]] readme-server.rb" modified="20200216150833931" title="$:/StoryList">
 <pre></pre>
+</div>
+<div created="20200216140544537" modified="20200216142752740" title="$:/temp/advancedsearch">
+<pre>[tag[INDEX]]</pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
 <pre>{
@@ -9536,15 +9605,15 @@ Error message and password prompt
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;http://100.64.2.3:8001/readme.html&quot;
+            &quot;text&quot;: &quot;http://localhost:8000/readme.html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
-            &quot;text&quot;: &quot;100.64.2.3:8001&quot;
+            &quot;text&quot;: &quot;localhost:8000&quot;
         },
         &quot;$:/info/url/hostname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/hostname&quot;,
-            &quot;text&quot;: &quot;100.64.2.3&quot;
+            &quot;text&quot;: &quot;localhost&quot;
         },
         &quot;$:/info/url/protocol&quot;: {
             &quot;title&quot;: &quot;$:/info/url/protocol&quot;,
@@ -9552,7 +9621,7 @@ Error message and password prompt
         },
         &quot;$:/info/url/port&quot;: {
             &quot;title&quot;: &quot;$:/info/url/port&quot;,
-            &quot;text&quot;: &quot;8001&quot;
+            &quot;text&quot;: &quot;8000&quot;
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
@@ -9564,15 +9633,15 @@ Error message and password prompt
         },
         &quot;$:/info/url/origin&quot;: {
             &quot;title&quot;: &quot;$:/info/url/origin&quot;,
-            &quot;text&quot;: &quot;http://100.64.2.3:8001&quot;
+            &quot;text&quot;: &quot;http://localhost:8000&quot;
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
-            &quot;text&quot;: &quot;1366&quot;
+            &quot;text&quot;: &quot;1350&quot;
         },
         &quot;$:/info/browser/screen/height&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/height&quot;,
-            &quot;text&quot;: &quot;768&quot;
+            &quot;text&quot;: &quot;900&quot;
         },
         &quot;$:/info/browser/language&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/language&quot;,
@@ -9581,10 +9650,10 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20200215023339218" creator="Donald" modified="20200216015645961" modifier="Donald" title="$:/temp/search">
+<div created="20200215023339218" creator="Donald" modified="20200216145548619" modifier="Donald" title="$:/temp/search">
 <pre></pre>
 </div>
-<div created="20200215013237944" creator="Donald" modified="20200215022609712" modifier="Donald" title="$:/theme">
+<div created="20200215013237944" creator="Donald" modified="20200216150457358" modifier="Donald" title="$:/theme">
 <pre>$:/themes/tiddlywiki/snowwhite</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.21">
@@ -9699,7 +9768,7 @@ Error message and password prompt
 <div created="20200215013328636" creator="Donald" modified="20200215013328636" modifier="Donald" title="$:/themes/tiddlywiki/vanilla/options/stickytitles">
 <pre>yes</pre>
 </div>
-<div created="20200215022634289" creator="Donald" modified="20200215022653161" modifier="Donald" title="$:/view">
+<div created="20200215022634289" creator="Donald" modified="20200216150448358" modifier="Donald" title="$:/view">
 <pre>classic</pre>
 </div>
 <div created="20200216021335700" modified="20200216024227066" tags="INDEX" title="About this Project">
@@ -9716,6 +9785,11 @@ We are using https://tiddlywiki.com as the editing &quot;engine&quot;, along wit
 * `index.html` - The barebones &quot;template&quot; file that you can use as the foundation of your project documentation
 * [[readme-server.rb]] - Server code that makes it easier to host + edit _any_ of the `.html` files in this repository.
 * `dist/`- The original ~[[TiddlyWiki|https://tiddlywiki.com]] `empty.html` and `upgrade.html`, in case you want to start from a fully clean slate.</pre>
+</div>
+<div created="20200216145649059" modified="20200216150929846" tags="INDEX HowTo" title="How to Export as TXT">
+<pre>Because we often want to generate documentation for code repositories where HTML might not be perfect, we have added the ability to export a set of [[Tiddlers|https://tiddlywiki.com/#Tiddlers]] in [[WikiText|https://tiddlywiki.com/#WikiText]] format, similar to [[Markdown|https://daringfireball.net/projects/markdown/]].
+
+First read [[How to export tiddlers|https://tiddlywiki.com/#How%20to%20export%20tiddlers]], and then note that in the EXPLO wiki files, we've added a [[Custom Export Format|https://tiddlywiki.com/#Creating%20a%20custom%20export%20format]] for &quot;TXT File&quot; export.</pre>
 </div>
 <div created="20200216020529436" modified="20200216023839783" title="INDEX">
 <pre>&lt;&lt;list-links &quot;[tag[INDEX]]&quot;&gt;&gt;</pre>
@@ -9750,10 +9824,16 @@ Usage: readme-server [options]
     -r, --root ROOT                  Root directory from which to serve, defaults to &quot;.&quot;           
 ```</pre>
 </div>
-<div created="20200216024306456" modified="20200216024624754" tags="INDEX" title="Usage">
+<div created="20200216141450940" description="TXT File" extension=".txt" modified="20200216144446118" tags="$:/tags/Exporter" title="TXT Exporter">
+<pre>\define renderContent()
+{{{ $(exportFilter)$ ||$:/core/templates/plain-text-tiddler-with-title}}}
+\end
+&lt;&lt;renderContent&gt;&gt;</pre>
+</div>
+<div created="20200216024306456" modified="20200216135722210" tags="INDEX" title="Usage">
 <pre>! Beginner Mode
 
-Just open &quot;index.html&quot; and write documentation.Click the red checkmark on the right to save as a &quot;README.html&quot; for your project.
+Just open &quot;index.html&quot; and write documentation. Click the red checkmark on the right to save as a &quot;README.html&quot; for your project.
 
 ! Pro Mode
 
