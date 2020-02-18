@@ -1,14 +1,8 @@
 #!/usr/bin/env sh
 # Keep NUM_BACKUPS backups only. Otherwise things get cray.
 
-# Take backup count from user input.
-# WARNING you will hose your backups if you send a non-integer.
-NUM_BACKUPS="${1}"
-
-# Default value if no user input
-if [ -z "${NUM_BACKUPS}" -o "${NUM_BACKUPS}" -lt 0 ]; then
-  NUM_BACKUPS=5
-fi
+# Change this, if you desire
+NUM_BACKUPS=5
 
 cd backup
 
