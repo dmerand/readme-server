@@ -4,7 +4,18 @@
 # Change this, if you desire
 NUM_BACKUPS=5
 
-cd backup
+# Default folder for backups is "backup"
+BACKUP_DIR="${1}"
+if [ -z "${BACKUP_DIR}" ]; then
+  BACKUP_DIR="backup"
+fi
+
+if [ -d "${BACKUP_DIR}" ]; then
+  cd "${BACKUP_DIR}"
+else
+  echo "Folder ${BACKUP_DIR} not found, aborting backup rotation..."
+  exit 1
+fi
 
 for DOC in $(ls | awk 'BEGIN{FS="."}{print $1}' | uniq); do
   SEARCH="${DOC}*.html" 

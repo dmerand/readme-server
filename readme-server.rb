@@ -59,7 +59,7 @@ server = WEBrick::HTTPServer.new({:Port => options[:port], :DocumentRoot => opti
 trap "INT" do
   puts "Shutting down..."
   server.shutdown
-  exec "#{File.dirname(__FILE__)}/bin/rotate_backups.sh"
+  exec "#{File.dirname(__FILE__)}/bin/rotate_backups.sh #{options[:backup]}"
 end
 
 server.start
