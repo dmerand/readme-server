@@ -13,11 +13,12 @@ fi
 cd backup
 
 for DOC in $(ls | awk 'BEGIN{FS="."}{print $1}' | uniq); do
-  COUNT=$(ls ${DOC}*.html | wc -l)
+  SEARCH="${DOC}*.html" 
+  COUNT=$(ls ${SEARCH} | wc -l)
   OMIT=$(bc -e "${COUNT} - ${NUM_BACKUPS}" -e 'quit')
+  # Only zip things up if the number of backups is high enough
   if [ "${OMIT}" -gt 0 ]; then
     TAR="${DOC}.$(date +'%s').tar"
-    SEARCH="${DOC}*.html" 
     # create a tar from a single file (otherwise the append will barf)
     find . -iname "${SEARCH}" -print | head -n 1 | xargs tar -cvf "${TAR}"
     # append to the tar
