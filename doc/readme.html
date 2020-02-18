@@ -9790,7 +9790,7 @@ Error message and password prompt
 <div created="20200215013149328" creator="D" modified="20200216021140139" modifier="Donald" title="$:/status/UserName">
 <pre></pre>
 </div>
-<div created="20200216154846298" list="INDEX [[About this Project]] Usage [[File Structure]] readme-server.rb [[How to Export as TXT]] [[How to Use Markdown]]" modified="20200216154846298" title="$:/StoryList">
+<div list="INDEX [[About this Project]] Usage [[File Structure]] readme-server.rb [[How to Export as TXT]] [[How to Use Markdown]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200216140544537" modified="20200216142752740" title="$:/temp/advancedsearch">
@@ -9809,15 +9809,15 @@ Error message and password prompt
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;http://localhost:8000/doc/readme.html&quot;
+            &quot;text&quot;: &quot;http://192.168.13.13:8000/doc/readme.html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
-            &quot;text&quot;: &quot;localhost:8000&quot;
+            &quot;text&quot;: &quot;192.168.13.13:8000&quot;
         },
         &quot;$:/info/url/hostname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/hostname&quot;,
-            &quot;text&quot;: &quot;localhost&quot;
+            &quot;text&quot;: &quot;192.168.13.13&quot;
         },
         &quot;$:/info/url/protocol&quot;: {
             &quot;title&quot;: &quot;$:/info/url/protocol&quot;,
@@ -9837,7 +9837,7 @@ Error message and password prompt
         },
         &quot;$:/info/url/origin&quot;: {
             &quot;title&quot;: &quot;$:/info/url/origin&quot;,
-            &quot;text&quot;: &quot;http://localhost:8000&quot;
+            &quot;text&quot;: &quot;http://192.168.13.13:8000&quot;
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
@@ -10003,7 +10003,7 @@ To use it, just make a [Tiddler](https://tiddlywiki.com/#Tiddlers) as normal but
 <div created="20200216020529436" modified="20200216023839783" title="INDEX">
 <pre>&lt;&lt;list-links &quot;[tag[INDEX]]&quot;&gt;&gt;</pre>
 </div>
-<div created="20200216022407614" modified="20200216154838047" tags="INDEX" title="readme-server.rb" type="text/x-markdown">
+<div created="20200216022407614" modified="20200218023141355" tags="INDEX" title="readme-server.rb" type="text/x-markdown">
 <pre>You can use this server to host any of the `.html` files in this repository (or any folder). You don't actually need to run this server to edit any of the README files. You can just open, for example, `index.html` and you'll get a fully functional, editable wiki. However, the server makes it easier to:
 
 - Automatically save edits to any wiki file you've selected
@@ -10020,6 +10020,7 @@ You will need to install Ruby, but otherwise there are no dependencies.
 
 Usage is simple: you can just type `./readme-server.rb`, and then navigate to the host IP at port 8000 (eg &lt;http://localhost:8000&gt;). The `index.html` file is edited by default, but you can edit any of the other files by adjusting the URL (eg &lt;http://localhost:8000/doc/readme.html&gt; to view/edit this very file).
 
+To exit the server, type `CTRL-C`. The server will attempt to &quot;rotate&quot; your backup logs by running `bin/rotate_backups.sh`, which takes all but the last N (default 5) backups and TAR+GZIPs them to save space. You can also run this script manually should you so-desire.
 
 ## Options
 

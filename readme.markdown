@@ -49,6 +49,8 @@ You will need to install Ruby, but otherwise there are no dependencies.
 
 Usage is simple: you can just type `./readme-server.rb`, and then navigate to the host IP at port 8000 (eg <http://localhost:8000>). The `index.html` file is edited by default, but you can edit any of the other files by adjusting the URL (eg <http://localhost:8000/doc/readme.html> to view/edit this very file).
 
+To exit the server, type CTRL-C. The server will attempt to "rotate" your backup logs by running `bin/rotate_backups.sh`, which takes all but the last N (default 5) backups and TAR+GZIPs them to save space. You can also run this script manually should you so-desire.
+
 
 ## Options
 
